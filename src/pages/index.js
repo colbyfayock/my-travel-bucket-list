@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Marker } from 'react-leaflet';
 
+import { useDestinations } from 'hooks';
+
 import Layout from 'components/Layout';
 import Container from 'components/Container';
 import Map from 'components/Map';
@@ -15,6 +17,8 @@ const CENTER = [LOCATION.lat, LOCATION.lng];
 const DEFAULT_ZOOM = 2;
 
 const IndexPage = () => {
+  const { destinations } = useDestinations();
+
   /**
    * mapEffect
    * @description Fires a callback once the page renders

@@ -34,5 +34,15 @@ module.exports = {
         icon: 'src/assets/images/react-leaflet-icon.png',
       },
     },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GCMS',
+        fieldName: 'gcms',
+        // UPDATE ME: This API endpoint should come from YOUR settings and should not be
+        // this same value. Find your API endpoint in GraphCMS > Settings > API Access
+        url: 'https://api-us-east-1.graphcms.com/v2/ckbob7r7707zk01yvcls0gu8f/master',
+      },
+    },
   ],
 };
