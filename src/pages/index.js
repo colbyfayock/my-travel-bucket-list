@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Marker } from 'react-leaflet';
+import { Marker, Popup } from 'react-leaflet';
 
 import { useDestinations } from 'hooks';
 
@@ -10,8 +10,8 @@ import Map from 'components/Map';
 import Snippet from 'components/Snippet';
 
 const LOCATION = {
-  lat: 38.9072,
-  lng: -77.0369,
+  lat: 0,
+  lng: 0,
 };
 const CENTER = [LOCATION.lat, LOCATION.lng];
 const DEFAULT_ZOOM = 2;
@@ -43,10 +43,25 @@ const IndexPage = () => {
       </Helmet>
 
       <Map {...mapSettings}>
-        <Marker position={CENTER} />
+        { destinations.map(destination => {
+          const { id, name, location } = destination;
+          const position = [location.latitude, location.longitude];
+          return (
+            <Marker key={id} position={position}>
+              <Popup>{ name }</Popup>
+            </Marker>
+          );
+        })}
       </Map>
 
       <Container type="content" className="text-center home-start">
+        <h2>My Destinations</h2>
+        <ul>
+          { destinations.map(destination => {
+            const { id, name } = destination;
+            return <li key={id}>{ name }</li>
+          })}
+        </ul>
         <h2>Still Getting Started?</h2>
         <p>Run the following in your terminal!</p>
         <Snippet>gatsby new [directory] https://github.com/colbyfayock/gatsby-starter-leaflet</Snippet>
