@@ -1,15 +1,15 @@
-# Travel Bucket List Map Demo
+# Travel Bucket List with Gatsby, Leaflet, & GraphCMS
 
-Learn how to create your own with [How to Map Data from a GraphQL API in Gatsby with GraphCMS](https://www.youtube.com/watch?v=isbr52VKjb0)
+Demo for tutorial [How to Create a Travel Bucket List Map with Gatsby, React Leaflet, & GraphCMS](https://www.youtube.com/watch?v=isbr52VKjb0)
 
-## Getting started locally
-* `yarn install`
-* `yarn develop`
-* 🚀
+📝 Article: https://www.freecodecamp.org/news/how-to-create-a-travel-bucket-list-map-with-gatsby-react-leaflet-graphcms/
 
-## Spin up your own mapping app!
-Check out [Gatsby Starter Leaflet](https://github.com/colbyfayock/gatsby-starter-leaflet)
+📺 YouTube: https://www.youtube.com/watch?v=isbr52VKjb0
 
 ## More tutorials and walkthroughs
-* [Follow me on Twitter](https://twitter.com/colbyfayock)
-* [Subscribe on YouTube](https://www.youtube.com/colbyfayock)
+
+🐦 [Follow me on Twitter](https://twitter.com/colbyfayock)
+
+📺 [Subscribe on YouTube](https://www.youtube.com/colbyfayock)
+
+✉️ [Sign Up for My Newsletter](https://colbyfayock.com/newsletter)
